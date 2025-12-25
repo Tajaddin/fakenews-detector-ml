@@ -34,8 +34,8 @@ except LookupError:
     nltk.download('wordnet')
     nltk.download('omw-1.4')
 
-from config import PROCESSED_DATA_DIR
-from utils import console
+from .config import PROCESSED_DATA_DIR
+from .utils import console
 
 class TextPreprocessor:
     """Comprehensive text preprocessing for fake news detection"""

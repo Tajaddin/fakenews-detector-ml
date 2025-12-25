@@ -12,8 +12,17 @@ This package contains the core modules for fake news detection:
 - utils: Utility functions
 """
 
-from . import config
-from . import utils
-
 __version__ = "1.0.0"
 __author__ = "Tajaddin Gafarov"
+
+# Lazy imports - modules are imported when accessed
+__all__ = [
+    "config",
+    "data_io",
+    "features",
+    "models_baseline",
+    "preprocess",
+    "train",
+    "evaluate",
+    "utils",
+]

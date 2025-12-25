@@ -26,10 +26,10 @@ warnings.filterwarnings('ignore')
 from rich.console import Console
 from rich.table import Table
 
-from config import MODELS_DIR, FIGURES_DIR, EXPERIMENTS_DIR, PROCESSED_DATA_DIR
-from utils import console, set_seed, display_metrics
-from data_io import DataLoader
-from features import FeatureExtractor
+from .config import MODELS_DIR, FIGURES_DIR, EXPERIMENTS_DIR, PROCESSED_DATA_DIR
+from .utils import console, set_seed, display_metrics
+from .data_io import DataLoader
+from .features import FeatureExtractor
 
 
 class ModelEvaluator:

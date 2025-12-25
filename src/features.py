@@ -13,8 +13,8 @@ import pickle
 from pathlib import Path
 from rich.console import Console
 
-from config import MODELS_DIR, BASELINE_CONFIG
-from utils import console
+from .config import MODELS_DIR, BASELINE_CONFIG
+from .utils import console
 
 class FeatureExtractor:
     """
