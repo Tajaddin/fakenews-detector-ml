@@ -5,7 +5,13 @@ Contains all project-wide constants, paths, and hyperparameters
 
 from pathlib import Path
 from typing import Dict, Any
-import torch
+
+# Optional torch import for device configuration
+try:
+    import torch
+    TORCH_AVAILABLE = True
+except ImportError:
+    TORCH_AVAILABLE = False
 
 # Project root directory
 PROJECT_ROOT = Path(__file__).parent.parent
@@ -38,7 +44,10 @@ VAL_RATIO = 0.1
 TEST_RATIO = 0.1
 
 # Device configuration
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+if TORCH_AVAILABLE:
+    DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+else:
+    DEVICE = "cpu"
 
 # Baseline model configurations
 BASELINE_CONFIG = {

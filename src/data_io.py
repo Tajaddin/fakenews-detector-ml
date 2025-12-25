@@ -15,8 +15,8 @@ from rich.table import Table
 import zipfile
 import tarfile
 
-from config import (
-    RAW_DATA_DIR, 
+from .config import (
+    RAW_DATA_DIR,
     PROCESSED_DATA_DIR,
     TRAIN_RATIO,
     VAL_RATIO,
@@ -24,7 +24,7 @@ from config import (
     RANDOM_SEED,
     LABEL_MAP
 )
-from utils import set_seed, console
+from .utils import set_seed, console
 
 class DataLoader:
     """Unified data loader for multiple fake news datasets"""

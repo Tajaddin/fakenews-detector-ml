@@ -15,8 +15,8 @@ from datetime import datetime
 from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TimeRemainingColumn
 
-from config import (
-    MODELS_DIR, 
+from .config import (
+    MODELS_DIR,
     EXPERIMENTS_DIR,
     RANDOM_SEED,
     RUNS_CSV,
@@ -24,8 +24,8 @@ from config import (
     TRANSFORMER_CONFIG,
     TRAINING_CONFIG
 )
-from utils import (
-    set_seed, 
+from .utils import (
+    set_seed,
     log_experiment,
     display_metrics,
     save_checkpoint,
@@ -33,9 +33,9 @@ from utils import (
     EarlyStopping,
     console
 )
-from data_io import DataLoader
-from features import create_baseline_features, create_advanced_features
-from models_baseline import BaselineModel, ModelEnsemble
+from .data_io import DataLoader
+from .features import create_baseline_features, create_advanced_features
+from .models_baseline import BaselineModel, ModelEnsemble
 
 
 class ModelTrainer:

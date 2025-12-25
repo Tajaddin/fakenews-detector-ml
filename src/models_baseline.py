@@ -27,8 +27,8 @@ from rich.table import Table
 import warnings
 warnings.filterwarnings('ignore')
 
-from config import BASELINE_CONFIG, MODELS_DIR, RANDOM_SEED
-from utils import console, set_seed, display_metrics
+from .config import BASELINE_CONFIG, MODELS_DIR, RANDOM_SEED
+from .utils import console, set_seed, display_metrics
 
 class BaselineModel:
     """Base class for baseline models"""
