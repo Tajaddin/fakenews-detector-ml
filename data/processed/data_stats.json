@@ -1,0 +1,19 @@
+{
+  "dataset": "custom",
+  "train_samples": 17477,
+  "val_samples": 2185,
+  "test_samples": 2185,
+  "train_fake_ratio": 0.24369170910339302,
+  "val_fake_ratio": 0.24347826086956523,
+  "test_fake_ratio": 0.24347826086956523,
+  "features": [
+    "id",
+    "text",
+    "title",
+    "news_url",
+    "source_domain",
+    "tweet_num",
+    "real",
+    "label"
+  ]
+}
